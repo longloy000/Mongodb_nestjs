@@ -34,7 +34,7 @@ export class ProductController {
 
   @Post(':id')
   @ApiParam({name: 'id', type: String})
-  @ApiOperation({description: 'สร้างผลิตภัณฑ์ใหม่'})
+  @ApiOperation({description: 'สร้างผลิตภัณฑ์ใหม่นะจ้ะ'})
   createProduct(@Param('id') id, @Body() body: CreateProductDto) {
     if (!body.name) {
       // throw new HttpException('body is required', 400)
