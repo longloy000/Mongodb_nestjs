@@ -19,7 +19,7 @@ export class User extends Document {
   @Prop()
   age: number;
 
-  @Prop({type: Boolean, default: true, required: true})
+  @Prop({type: Boolean, default: true, required: false})
   isAvailable: boolean;
 
   @Prop(raw({
